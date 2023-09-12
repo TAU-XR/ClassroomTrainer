@@ -11,8 +11,7 @@ public class EnvironmentCalibrator : TXRSingleton<EnvironmentCalibrator>
     [SerializeField] private GameObject _btnConfirm;
     [SerializeField] private GameObject _btnRedo;
 
-    [SerializeField] private FollowTransform
-        _playerMarkedPosition; // a sphere following the exact position players mark when they pinch. Changes every frame according to players' hand.
+    [SerializeField] private FollowTransform _playerMarkedPosition;  // a sphere following the exact position players mark when they pinch. Changes every frame according to players' hand.
 
     private float PINCH_HOLD_DURATION = 1f;
 
@@ -28,14 +27,12 @@ public class EnvironmentCalibrator : TXRSingleton<EnvironmentCalibrator>
         EnterCalibrationMode();
 
         // wait until getting 1st point
-        await TXRPlayer.Instance.PinchingInputManager.WaitForHoldAndRelease(HandType.Right, PINCH_HOLD_DURATION);
-        realWorldReferencePointPosition =
-            Instantiate(calibrationMark, _playerMarkedPosition.Position, Quaternion.identity, _player).transform;
+        await TXRPlayer.Instance.WaitForPinchHold(HandType.Right, PINCH_HOLD_DURATION, true);
+        realWorldReferencePointPosition = Instantiate(calibrationMark, _playerMarkedPosition.Position, Quaternion.identity, _player).transform;
 
         // wait until getting 2st point
-        await TXRPlayer.Instance.PinchingInputManager.WaitForHoldAndRelease(HandType.Right, PINCH_HOLD_DURATION);
-        realWorldReferencePointRotation =
-            Instantiate(calibrationMark, _playerMarkedPosition.Position, Quaternion.identity, _player).transform;
+        await TXRPlayer.Instance.WaitForPinchHold(HandType.Right, PINCH_HOLD_DURATION, true);
+        realWorldReferencePointRotation = Instantiate(calibrationMark, _playerMarkedPosition.Position, Quaternion.identity, _player).transform;
 
         // once we have 2 real world reference points - we can calibrate.
         AlignVirtualToPhysicalRoom();
@@ -63,7 +60,6 @@ public class EnvironmentCalibrator : TXRSingleton<EnvironmentCalibrator>
             EndCalibration();
         }
     }
-
     private void Init()
     {
         _btnConfirm.gameObject.SetActive(false);
@@ -127,13 +123,10 @@ public class EnvironmentCalibrator : TXRSingleton<EnvironmentCalibrator>
     public void AlignVirtualToPhysicalRoom()
     {
         // ignore differences on height
-        realWorldReferencePointRotation.position = new Vector3(realWorldReferencePointRotation.position.x,
-            realWorldReferencePointPosition.position.y, realWorldReferencePointRotation.position.z);
+        realWorldReferencePointRotation.position = new Vector3(realWorldReferencePointRotation.position.x, realWorldReferencePointPosition.position.y, realWorldReferencePointRotation.position.z);
 
-        Vector3 realDirection = (realWorldReferencePointRotation.position - realWorldReferencePointPosition.position)
-            .normalized;
-        Vector3 virtualDirection = (virtualReferencePointRotation.position - virtualReferencePointPosition.position)
-            .normalized;
+        Vector3 realDirection = (realWorldReferencePointRotation.position - realWorldReferencePointPosition.position).normalized;
+        Vector3 virtualDirection = (virtualReferencePointRotation.position - virtualReferencePointPosition.position).normalized;
 
         float angle = Vector3.SignedAngle(realDirection, virtualDirection, _player.up);
         _player.Rotate(_player.up, angle);

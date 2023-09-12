@@ -48,7 +48,8 @@ public class OVREyeGaze : MonoBehaviour
     /// <summary>
     /// GameObject will not change if detected eye state confidence is below this threshold.
     /// </summary>
-    [Range(0f, 1f)] public float ConfidenceThreshold = 0.5f;
+    [Range(0f, 1f)]
+    public float ConfidenceThreshold = 0.5f;
 
     /// <summary>
     /// GameObject will automatically change position.
@@ -76,10 +77,7 @@ public class OVREyeGaze : MonoBehaviour
 
     private Quaternion _initialRotationOffset;
     private Transform _viewTransform;
-
-    private const OVRPermissionsRequester.Permission EyeTrackingPermission =
-        OVRPermissionsRequester.Permission.EyeTracking;
-
+    private const OVRPermissionsRequester.Permission EyeTrackingPermission = OVRPermissionsRequester.Permission.EyeTracking;
     private Action<string> _onPermissionGranted;
     private static int _trackingInstanceCount;
 

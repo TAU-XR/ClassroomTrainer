@@ -2,13 +2,11 @@ using Cysharp.Threading.Tasks;
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
-using System.Threading;
 
 public class TXRPlayer : TXRSingleton<TXRPlayer>
 {
-    [Header("Player Trackables")] [SerializeField]
-    private Transform ovrRig;
-
+    [Header("Player Trackables")]
+    [SerializeField] private Transform ovrRig;
     [SerializeField] private Transform playerHead;
     [SerializeField] private Transform rightHandAnchor;
     [SerializeField] private Transform leftHandAnchor;
@@ -17,10 +15,12 @@ public class TXRPlayer : TXRSingleton<TXRPlayer>
     public Transform RightHand => rightHandAnchor;
     public Transform LeftHand => leftHandAnchor;
 
-    [Header("Hand Tracking")] public TXRHand HandLeft;
+    [Header("Hand Tracking")]
+    public TXRHand HandLeft;
     public TXRHand HandRight;
 
-    [Header("Eye Tracking")] public TXREyeTracker EyeTracker;
+    [Header("Eye Tracking")]
+    public TXREyeTracker EyeTracker;
     public bool IsEyeTrackingEnabled;
     public Transform FocusedObject => EyeTracker.FocusedObject;
     public Vector3 EyeGazeHitPosition => EyeTracker.EyeGazeHitPosition;
@@ -28,17 +28,17 @@ public class TXRPlayer : TXRSingleton<TXRPlayer>
     public Transform LeftEye => EyeTracker.LeftEye;
 
 
-    [Header("Face Tracking")] [SerializeField]
-    public OVRFaceExpressions ovrFace;
-
+    [Header("Face Tracking")]
+    [SerializeField] public OVRFaceExpressions ovrFace;
     public OVRFaceExpressions OVRFace => ovrFace;
     public bool IsFaceTrackingEnabled;
 
     // Color overlay
     [SerializeField] private MeshRenderer colorOverlayMR;
 
-    public ControllersInputManager ControllersInputManager;
-    public PinchingInputManager PinchingInputManager;
+    // input handling
+    private bool isLeftTriggerHolded = false;
+    private bool isRightTriggerHolded = false;
 
     protected override void DoInAwake()
     {
@@ -46,9 +46,6 @@ public class TXRPlayer : TXRSingleton<TXRPlayer>
 
         HandRight.Init();
         HandLeft.Init();
-
-        ControllersInputManager = new ControllersInputManager();
-        PinchingInputManager = new PinchingInputManager(HandLeft, HandRight);
 
         if (IsEyeTrackingEnabled)
             EyeTracker.Init();
@@ -68,10 +65,13 @@ public class TXRPlayer : TXRSingleton<TXRPlayer>
         {
             EyeTracker.UpdateEyeTracker();
         }
+
+        isLeftTriggerHolded = OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > .7f;
+        isRightTriggerHolded = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > .7f;
     }
 
     // covers player's view with color. 
-    public async UniTask FadeViewToColor(Color targetColor, float duration)
+    async public UniTask FadeToColor(Color targetColor, float duration)
     {
         if (duration == 0)
         {
@@ -92,7 +92,6 @@ public class TXRPlayer : TXRSingleton<TXRPlayer>
             await UniTask.Yield();
         }
     }
-
     public void RepositionPlayer(Vector3 position, Quaternion rotation)
     {
         transform.position = position;
@@ -103,18 +102,130 @@ public class TXRPlayer : TXRSingleton<TXRPlayer>
     {
         // IMPLEMENT
     }
-
     public void CalibrateFloorHeight()
     {
         // IMPLEMENT
     }
-
     public void SetPassthrough(bool state)
     {
         _ovrManager.isInsightPassthroughEnabled = state;
     }
 
+    #region Controllers
+    public bool IsTriggerPressedThisFrame(HandType handType)
+    {
+        switch (handType)
+        {
+            case HandType.Left:
+                return isLeftTriggerHolded;
+            case HandType.Right:
+                return isRightTriggerHolded;
+            case HandType.Any:
+                return isLeftTriggerHolded || isRightTriggerHolded;
+            case HandType.None:
+                return false;
+            default: return false;
+        }
+    }
+
+    // TODO: add cancelation timer
+
+    async public UniTask WaitForTriggerHold(HandType handType, float duration)
+    {
+        OVRInput.Controller selectedController = handType == HandType.Left ? OVRInput.Controller.LTouch : OVRInput.Controller.RTouch;
+
+        float holdingDuration = 0;
+        while (holdingDuration < duration)
+        {
+            if (IsTriggerPressedThisFrame(handType))
+            {
+                holdingDuration += Time.deltaTime;
+                OVRInput.SetControllerVibration(holdingDuration / duration, holdingDuration / duration, selectedController);
+            }
+            else
+            {
+                holdingDuration = 0;
+                OVRInput.SetControllerVibration(0, 0, selectedController);
+            }
+
+            await UniTask.Yield();
+        }
+        OVRInput.SetControllerVibration(0, 0, selectedController);
+
+    }
+    #endregion
+
     #region Hands
+    public Action PinchEnter(HandType handType)
+    {
+        switch (handType)
+        {
+            case HandType.Left:
+                return HandLeft.PinchEnter;
+            case HandType.Right:
+                return HandRight.PinchEnter;
+            case HandType.Any:
+                return HandRight.PinchEnter;
+            case HandType.None:
+                return null;
+            default: return null;
+        }
+    }
+
+    public Action PinchExit(HandType handType)
+    {
+        switch (handType)
+        {
+            case HandType.Left:
+                return HandLeft.PinchExit;
+            case HandType.Right:
+                return HandRight.PinchExit;
+            case HandType.Any:
+                return HandRight.PinchExit;
+            case HandType.None:
+                return null;
+            default: return null;
+        }
+    }
+
+    public bool IsPlayerPinchingThisFrame(HandType handType)
+    {
+        switch (handType)
+        {
+            case HandType.Left:
+                return HandLeft.IsPlayerPinchingThisFrame();
+            case HandType.Right:
+                return HandRight.IsPlayerPinchingThisFrame();
+            case HandType.Any:
+                return HandRight.IsPlayerPinchingThisFrame() || HandLeft.IsPlayerPinchingThisFrame(); ;
+            case HandType.None:
+                return false;
+            default: return false;
+        }
+    }
+
+    async public UniTask WaitForPinchHold(HandType handType, float duration, bool waitUntilRelease = false)
+    {
+        float holdingDuration = 0;
+        while (holdingDuration < duration)
+        {
+            if (IsPlayerPinchingThisFrame(handType))
+            {
+                holdingDuration += Time.deltaTime;
+            }
+            else
+            {
+                holdingDuration = 0;
+            }
+            await UniTask.Yield();
+        }
+
+        while (waitUntilRelease && IsPlayerPinchingThisFrame(handType))
+        {
+            Debug.Log("WAIT UNTIL RELEASE");
+            await UniTask.Yield();
+        }
+    }
 
     public Transform GetHandFingerCollider(HandType handType, FingerType fingerType)
     {
@@ -131,6 +242,7 @@ public class TXRPlayer : TXRSingleton<TXRPlayer>
             default: return null;
         }
     }
-
     #endregion
+
+
 }

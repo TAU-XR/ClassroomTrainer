@@ -64,7 +64,7 @@ public class TXRSceneManager : TXRSingleton<TXRSceneManager>
 
     private void InitializeInBuild()
     {
-        TXRPlayer.Instance.FadeViewToColor(Color.black, 0).Forget();
+        TXRPlayer.Instance.FadeToColor(Color.black, 0).Forget();
         currentSceneName = BaseSceneName;
         // make sure to launch your starting scene here
         LoadActiveScene(FirstLoadedSceneName).Forget();
@@ -84,7 +84,7 @@ public class TXRSceneManager : TXRSingleton<TXRSceneManager>
         // reposition player accordingly to new scene
         RepositionPlayerIfNeeded();
 
-        await TXRPlayer.Instance.FadeViewToColor(Color.clear, FADETOCLEARDURATION);
+        await TXRPlayer.Instance.FadeToColor(Color.clear, FADETOCLEARDURATION);
     }
 
     async public UniTask SwitchActiveScene(string sceneName)
@@ -103,7 +103,7 @@ public class TXRSceneManager : TXRSingleton<TXRSceneManager>
 
     async private UniTask UnloadActiveScene()
     {
-        await TXRPlayer.Instance.FadeViewToColor(Color.black, FADETOBLACKDURATION);
+        await TXRPlayer.Instance.FadeToColor(Color.black, FADETOBLACKDURATION);
 
         await SceneManager.UnloadSceneAsync(currentSceneName);
     }

@@ -9,12 +9,10 @@ public class TXREyeTracker : MonoBehaviour
     public Vector3 EyeGazeHitPosition => _eyeGazeHitPosition;
     public Transform RightEye => _rightEye;
     public Transform LeftEye => _leftEye;
-    public Vector3 EyePosition => _eyePosition;
 
 
     [SerializeField] private Transform _rightEye;
     [SerializeField] private Transform _leftEye;
-    private Vector3 _eyePosition;
     private const float EYERAYMAXLENGTH = 100000;
     private const float EYETRACKINGCONFIDENCETHRESHOLD = .5f;
     private Vector3 NOTTRACKINGVECTORVALUE = new Vector3(-1f, -1f, -1f);
@@ -37,34 +35,28 @@ public class TXREyeTracker : MonoBehaviour
 
     public void UpdateEyeTracker()
     {
-        // don't track if there is no OVREye component (enough to check only on one eye).
+        // don't track if there is no OVREye componenet (enough to check only on one eye).
         if (_ovrEyeR == null) return;
 
         // don't track on low confidence.
-        // Debug.Log(_ovrEyeR.Confidence);
         if (_ovrEyeR.Confidence < EYETRACKINGCONFIDENCETHRESHOLD)
         {
             Debug.LogWarning("EyeTracking confidence value is low. Eyes are not tracked");
-            _focusedObject = null;
-            _eyeGazeHitPosition = NOTTRACKINGVECTORVALUE;
-            // Debug.Log("EyeTracking confidence value is low. Eyes are not tracked");
+            //_focusedObject = null;
+            //_eyeGazeHitPosition = NOTTRACKINGVECTORVALUE;
 
-            return;
+           // return;
         }
 
-
         // cast from middle eye
-        _eyePosition = (_rightEye.position + _leftEye.position) / 2;
-
-        //TODO: try using average of both eyes forward
+        Vector3 eyePosition = (_rightEye.position + _leftEye.position) / 2;
+        
         // eye forward is same for both eyes.
         Vector3 eyeForward = _rightEye.forward;
 
         RaycastHit hit;
-        if (Physics.Raycast(_eyePosition, eyeForward, out hit, EYERAYMAXLENGTH, _eyeTrackingLayerMask))
+        if (Physics.Raycast(eyePosition, eyeForward, out hit, EYERAYMAXLENGTH, _eyeTrackingLayerMask))
         {
-            //Use interface:
-            //(_focusedObject as ILookedAt)?.LookedAt();
             _focusedObject = hit.transform;
             _eyeGazeHitPosition = hit.point;
         }
@@ -74,6 +66,6 @@ public class TXREyeTracker : MonoBehaviour
             _eyeGazeHitPosition = NOTTRACKINGVECTORVALUE;
         }
 
-        Debug.DrawRay(_eyePosition, eyeForward, Color.red);
+        Debug.DrawRay(eyePosition, eyeForward);
     }
 }

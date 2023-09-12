@@ -1,0 +1,2400 @@
+﻿{
+    "Dikla": {
+        "Version": "1.10.1822.1",
+        "Scene": {
+            "Name": true,
+            "SupportShaderSelect": true
+        },
+        "Export Directory": "C:/Users/VRAdmin/Documents/Character creator/Class MAnagment/Dikla",
+        "Object": {
+            "Dikla": {
+                "Generation": "RL_CharacterCreator_Base_Game_G1_Divide_Eyelash_UV",
+                "Physics": {
+                    "Collision Shapes": {
+                        "pelvis": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -5.525092601776123,
+                                    0.21376918256282807,
+                                    94.1957015991211
+                                ],
+                                "WorldRotationQ": [
+                                    0.8121436834335327,
+                                    0.07486690580844879,
+                                    -0.10691452771425247,
+                                    0.5686711072921753
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    1.0000001192092896,
+                                    1.0000001192092896
+                                ],
+                                "Radius": 9.339056968688965,
+                                "Capsule Length": 22.12552833557129
+                            },
+                            "Capsule(0)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    5.474073886871338,
+                                    -0.012115477584302426,
+                                    94.79536437988281
+                                ],
+                                "WorldRotationQ": [
+                                    0.8121432065963745,
+                                    -0.07486637681722641,
+                                    0.10692726075649262,
+                                    0.5686694979667664
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0000001192092896,
+                                    1.0000001192092896
+                                ],
+                                "Radius": 9.339056968688965,
+                                "Capsule Length": 21.503252029418947
+                            }
+                        },
+                        "thigh_l": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    10.564148902893067,
+                                    -1.3805301189422608,
+                                    68.03932189941406
+                                ],
+                                "WorldRotationQ": [
+                                    -0.03294410929083824,
+                                    0.7309373617172241,
+                                    -0.6806329488754273,
+                                    -0.03720228374004364
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    0.9999998807907105,
+                                    0.9999998807907105
+                                ],
+                                "Radius": 7.741215229034424,
+                                "Capsule Length": 33.47918701171875
+                            }
+                        },
+                        "calf_l": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    9.36091423034668,
+                                    1.6783274412155152,
+                                    24.295560836791993
+                                ],
+                                "WorldRotationQ": [
+                                    -0.004018151201307774,
+                                    0.7195871472358704,
+                                    -0.6943764686584473,
+                                    -0.004417394753545523
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Radius": 5.811293125152588,
+                                "Capsule Length": 33.620262145996097
+                            }
+                        },
+                        "thigh_r": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -10.182164192199707,
+                                    -1.1768358945846558,
+                                    65.61052703857422
+                                ],
+                                "WorldRotationQ": [
+                                    0.03362785279750824,
+                                    0.7311601042747498,
+                                    -0.6803188323974609,
+                                    0.03795258328318596
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0000001192092896,
+                                    1.0
+                                ],
+                                "Radius": 7.777103424072266,
+                                "Capsule Length": 38.07891845703125
+                            }
+                        },
+                        "calf_r": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -9.229582786560059,
+                                    1.6764580011367798,
+                                    23.938724517822267
+                                ],
+                                "WorldRotationQ": [
+                                    0.0029949501622468235,
+                                    0.7188751101493836,
+                                    -0.6951246857643127,
+                                    0.003368744160979986
+                                ],
+                                "WorldScale": [
+                                    1.0000003576278687,
+                                    1.000000238418579,
+                                    1.000000238418579
+                                ],
+                                "Radius": 5.810448169708252,
+                                "Capsule Length": 33.61427688598633
+                            }
+                        },
+                        "spine_02": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Z",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.08331107348203659,
+                                    -1.6299610137939454,
+                                    115.95916748046875
+                                ],
+                                "WorldRotationQ": [
+                                    0.45957598090171816,
+                                    0.5390733480453491,
+                                    0.45780065655708315,
+                                    0.5372228026390076
+                                ],
+                                "WorldScale": [
+                                    0.9999998807907105,
+                                    0.9999998807907105,
+                                    1.0000001192092896
+                                ],
+                                "Radius": 11.629992485046387,
+                                "Capsule Length": 6.390512466430664
+                            }
+                        },
+                        "upperarm_l": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    25.50773811340332,
+                                    6.07933235168457,
+                                    133.13214111328126
+                                ],
+                                "WorldRotationQ": [
+                                    0.5039195418357849,
+                                    0.49605414271354678,
+                                    -0.4963257610797882,
+                                    0.5036429166793823
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0000001192092896,
+                                    1.000000238418579
+                                ],
+                                "Radius": 5.2370147705078129,
+                                "Capsule Length": 19.876996994018556
+                            }
+                        },
+                        "lowerarm_l": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    51.09602737426758,
+                                    5.65492582321167,
+                                    134.6570587158203
+                                ],
+                                "WorldRotationQ": [
+                                    0.49693870544433596,
+                                    0.5030509829521179,
+                                    -0.4983161687850952,
+                                    0.5016698837280273
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    0.9999998211860657,
+                                    1.0000001192092896
+                                ],
+                                "Radius": 4.6501288414001469,
+                                "Capsule Length": 19.088245391845704
+                            }
+                        },
+                        "upperarm_r": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -25.399742126464845,
+                                    6.118279933929443,
+                                    133.11773681640626
+                                ],
+                                "WorldRotationQ": [
+                                    0.5037248730659485,
+                                    -0.4962393343448639,
+                                    0.4959609806537628,
+                                    0.5040144324302673
+                                ],
+                                "WorldScale": [
+                                    1.0000003576278687,
+                                    1.0000003576278687,
+                                    1.000000238418579
+                                ],
+                                "Radius": 5.236366271972656,
+                                "Capsule Length": 19.8784236907959
+                            },
+                            "Capsule(0)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -28.12139320373535,
+                                    5.556845188140869,
+                                    134.41921997070313
+                                ],
+                                "WorldRotationQ": [
+                                    0.5037248730659485,
+                                    -0.4962393343448639,
+                                    0.4959609806537628,
+                                    0.5040144324302673
+                                ],
+                                "WorldScale": [
+                                    1.0000003576278687,
+                                    1.0000003576278687,
+                                    1.000000238418579
+                                ],
+                                "Radius": 4.7389116287231449,
+                                "Capsule Length": 22.37858009338379
+                            }
+                        },
+                        "neck_01": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.03362835943698883,
+                                    3.5670881271362306,
+                                    144.81529235839845
+                                ],
+                                "WorldRotationQ": [
+                                    0.7678110003471375,
+                                    0.00008587877528043464,
+                                    -0.00010749018838396296,
+                                    0.6406764984130859
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    0.9999997615814209,
+                                    0.9999998807907105
+                                ],
+                                "Radius": 4.7996063232421879,
+                                "Capsule Length": 0.18861007690429688
+                            },
+                            "Capsule(0)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Z",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.030324630439281465,
+                                    2.6134626865386965,
+                                    132.72610473632813
+                                ],
+                                "WorldRotationQ": [
+                                    0.543000340461731,
+                                    0.4530874192714691,
+                                    0.5428482890129089,
+                                    0.45296597480773928
+                                ],
+                                "WorldScale": [
+                                    0.9999998211860657,
+                                    0.9999997615814209,
+                                    0.9999998807907105
+                                ],
+                                "Radius": 6.659499645233154,
+                                "Capsule Length": 13.492594718933106
+                            },
+                            "Capsule(1)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -6.970766067504883,
+                                    0.12985800206661225,
+                                    128.86151123046876
+                                ],
+                                "WorldRotationQ": [
+                                    0.24450193345546723,
+                                    0.6635935306549072,
+                                    0.24443075060844422,
+                                    0.6634124517440796
+                                ],
+                                "WorldScale": [
+                                    0.9999997615814209,
+                                    0.9999998807907105,
+                                    0.9999998211860657
+                                ],
+                                "Radius": 6.62014627456665,
+                                "Capsule Length": 3.92818546295166
+                            },
+                            "Capsule(2)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    7.029231071472168,
+                                    0.1297759860754013,
+                                    128.857666015625
+                                ],
+                                "WorldRotationQ": [
+                                    0.24450193345546723,
+                                    0.6635935306549072,
+                                    0.24443075060844422,
+                                    0.6634124517440796
+                                ],
+                                "WorldScale": [
+                                    0.9999997615814209,
+                                    0.9999998807907105,
+                                    0.9999998211860657
+                                ],
+                                "Radius": 6.62014627456665,
+                                "Capsule Length": 3.92818546295166
+                            }
+                        },
+                        "head": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.03478938713669777,
+                                    -0.1763458400964737,
+                                    155.5187225341797
+                                ],
+                                "WorldRotationQ": [
+                                    0.7071052193641663,
+                                    0.000006014996415615315,
+                                    0.0000025321708108094755,
+                                    0.7071083188056946
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.000000238418579,
+                                    1.000000238418579
+                                ],
+                                "Radius": 7.45011043548584,
+                                "Capsule Length": 8.070032119750977
+                            }
+                        }
+                    },
+                    "Soft Physics": {
+                        "Meshes": {
+                            "Side_part_mid": {
+                                "Materials": {
+                                    "Hair_Transparency": {
+                                        "Activate Physics": true,
+                                        "Use Global Gravity": true,
+                                        "Weight Map Path": "./textures/Dikla/Side_part_mid/Side_part_mid/Hair_Transparency/Hair_Transparency_WeightMap.jpg",
+                                        "Mass": 1.0,
+                                        "Friction": 0.10000000149011612,
+                                        "Damping": 0.30000001192092898,
+                                        "Drag": 0.25,
+                                        "Solver Frequency": 150.0,
+                                        "Tether Limit": 1.0,
+                                        "Elasticity": 29.0,
+                                        "Stretch": 1.0,
+                                        "Bending": 30.0,
+                                        "Inertia": [
+                                            13.0,
+                                            13.0,
+                                            13.0
+                                        ],
+                                        "Soft Vs Rigid Collision": true,
+                                        "Soft Vs Rigid Collision_Margin": 5.0,
+                                        "Self Collision": false,
+                                        "Self Collision Margin": 0.0,
+                                        "Stiffness Frequency": 10.0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Meshes": {
+                    "CC_Game_Body": {
+                        "Materials": {
+                            "Ga_Skin_Body": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    254.00001525878907,
+                                    254.00001525878907,
+                                    254.00001525878907
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Ga_Skin_Body_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Ga_Skin_Body_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            },
+                            "Ga_Eyelash": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    123.00000762939453,
+                                    123.00000762939453,
+                                    123.00000762939453
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Eyelash/Ga_Eyelash_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Ga_Eyelash_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Eyelash/Ga_Eyelash_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "Ga_Eyelash_Opacity.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Ga_Eyelash_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Eyelash/Ga_Eyelash_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "CC_Game_Tongue": {
+                        "Materials": {
+                            "Ga_Skin_Body": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    254.00001525878907,
+                                    254.00001525878907,
+                                    254.00001525878907
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Ga_Skin_Body_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Ga_Skin_Body_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            },
+                            "Ga_Eyelash": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    123.00000762939453,
+                                    123.00000762939453,
+                                    123.00000762939453
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Eyelash/Ga_Eyelash_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Ga_Eyelash_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Eyelash/Ga_Eyelash_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "Ga_Eyelash_Opacity.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Ga_Eyelash_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/Dikla/CC_Game_Body/Ga_Eyelash/Ga_Eyelash_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Boots": {
+                        "Materials": {
+                            "Boots": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    235.00001525878907,
+                                    230.00001525878907,
+                                    204.00001525878907
+                                ],
+                                "Ambient Color": [
+                                    214.00001525878907,
+                                    214.00001525878907,
+                                    214.00001525878907
+                                ],
+                                "Specular Color": [
+                                    202.00001525878907,
+                                    238.00001525878907,
+                                    236.00001525878907
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/Boots/Boots/Boots/Boots_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Boots_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "Boots_Specular.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/Boots/Boots/Boots/Boots_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Dikla/Boots/Boots/Boots/Boots_Glow.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Displacement": {
+                                        "Texture Path": "./textures/Dikla/Boots/Boots/Boots/Boots_Displacement.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ],
+                                        "Displacement Map": "Gray Scale Displacement",
+                                        "Tessellation Level": 0.0,
+                                        "Multiplier": 1.0,
+                                        "Gray-scale Base Value": 0.5
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "Boots_Opacity.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Boots_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/Boots/Boots/Boots/Boots_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Female_Angled": {
+                        "Materials": {
+                            "Female_Angled_Transparency": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Node Type": "Brow",
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    128.0,
+                                    128.0,
+                                    128.0
+                                ],
+                                "Specular Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/Female_Angled/Female_Angled/Female_Angled_Transparency/Female_Angled_Transparency_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Female_Angled_Transparency_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "Female_Angled_Transparency_Specular.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/Female_Angled/Female_Angled/Female_Angled_Transparency/Female_Angled_Transparency_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "Female_Angled_Transparency_Opacity.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/Dikla/Female_Angled/Female_Angled/Female_Angled_Transparency/Female_Angled_Transparency_Hair Root Map.jpg"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/Dikla/Female_Angled/Female_Angled/Female_Angled_Transparency/Female_Angled_Transparency_Hair ID Map.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            0.0,
+                                            255.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 0.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 1.0,
+                                        "Hair Specular Map Strength": 0.0,
+                                        "Specular Strength": 1.0,
+                                        "Secondary Specular Strength": 1.0,
+                                        "Transmission Strength": 1.0,
+                                        "No Back Face Triangles": 0.5,
+                                        "VertexGrayToColor": [
+                                            10.0,
+                                            7.0,
+                                            5.0
+                                        ],
+                                        "VertexColorStrength": 0.6000000238418579,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            23.0,
+                                            7.0,
+                                            0.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            41.0,
+                                            21.0,
+                                            9.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            134.0,
+                                            101.0,
+                                            72.0
+                                        ],
+                                        "_1st Dye Strength": 0.593999981880188,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            138.46499633789063,
+                                            203.33700561523438,
+                                            229.93350219726563
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 0.8149999976158142,
+                                        "Invert 1st Dye RootMap Mask": 1.0,
+                                        "_1st Dye add Specular": 0.0,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            55.0,
+                                            23.0,
+                                            6.0
+                                        ],
+                                        "_2nd Dye Strength": 0.7879999876022339,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            50.132999420166019,
+                                            93.96749877929688,
+                                            137.82749938964845
+                                        ],
+                                        "_2nd BlendMode": 0.0,
+                                        "Mask 2nd Dye by RootMap": 0.0,
+                                        "Invert 2nd Dye RootMap Mask": 0.0,
+                                        "_2nd Dye add Specular": 0.0,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": 0.0,
+                                        "BlackColor Reflection Offset Y": 0.0,
+                                        "BlackColor Reflection Offset Z": 0.0,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": 0.0,
+                                        "WhiteColor Reflection Offset Y": 0.0,
+                                        "WhiteColor Reflection Offset Z": 0.0,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            },
+                            "Female_Angled_Base_Transparency": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Node Type": "Brow",
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    128.0,
+                                    128.0,
+                                    128.0
+                                ],
+                                "Specular Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/Female_Angled/Female_Angled/Female_Angled_Base_Transparency/Female_Angled_Base_Transparency_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Female_Angled_Base_Transparency_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/Female_Angled/Female_Angled/Female_Angled_Base_Transparency/Female_Angled_Base_Transparency_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "Female_Angled_Base_Transparency_Opacity.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Rocker_Jeans": {
+                        "Materials": {
+                            "Rocker_Jeans": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    150.0,
+                                    150.0,
+                                    150.0
+                                ],
+                                "Ambient Color": [
+                                    150.0,
+                                    150.0,
+                                    150.0
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/Rocker_Jeans/Rocker_Jeans/Rocker_Jeans/Rocker_Jeans_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Rocker_Jeans_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/Rocker_Jeans/Rocker_Jeans/Rocker_Jeans/Rocker_Jeans_roughness.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "Rocker_Jeans_Opacity.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Rocker_Jeans_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/Rocker_Jeans/Rocker_Jeans/Rocker_Jeans/Rocker_Jeans_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Basic_T_shirts": {
+                        "Materials": {
+                            "Basic_T_shirts": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    150.0,
+                                    150.0,
+                                    150.0
+                                ],
+                                "Specular Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "Basic_T_shirts_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/Basic_T_shirts/Basic_T_shirts/Basic_T_shirts/Basic_T_shirts_roughness.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Dikla/Basic_T_shirts/Basic_T_shirts/Basic_T_shirts/Basic_T_shirts_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Basic_T_shirts_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/Basic_T_shirts/Basic_T_shirts/Basic_T_shirts/Basic_T_shirts_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "CC_Base_Eye": {
+                        "Materials": {
+                            "Std_Eye_R": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    229.00001525878907,
+                                    229.00001525878907,
+                                    229.00001525878907
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Eye_R/Std_Eye_R_metallic.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Std_Eye_R_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Eye_R/Std_Eye_R_roughness.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Std_Eye_R_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            },
+                            "Std_Cornea_R": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Opacity": 0.800000011920929,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_R/Std_Cornea_R_metallic.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Std_Cornea_R_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_R/Std_Cornea_R_roughness.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_R/Std_Cornea_R_ao.jpg",
+                                        "Strength": 50.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLEye",
+                                    "Image": {
+                                        "Iris Normal": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_IrisN.png"
+                                        },
+                                        "Sclera Normal": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_ScleraN.png"
+                                        },
+                                        "EyeBlendMap2": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_BCBMap.jpg"
+                                        },
+                                        "Inner Iris Mask": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_IrisMask.png"
+                                        },
+                                        "Sclera": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_Sclera.jpg"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "BlendMap2 Strength": 0.0,
+                                        "Shadow Radius": 0.4000000059604645,
+                                        "Shadow Hardness": 0.5,
+                                        "Specular Scale": 0.800000011920929,
+                                        "Is Left Eye": 1.0,
+                                        "Eye Corner Darkness Color": [
+                                            255.0,
+                                            187.9860076904297,
+                                            178.9998016357422
+                                        ],
+                                        "Iris Depth Scale": 0.8999999761581421,
+                                        "_Iris Roughness": 0.0,
+                                        "Iris Color Brightness": 1.0,
+                                        "Pupil Scale": 0.9549999833106995,
+                                        "_IoR": 1.399999976158142,
+                                        "Iris Cloudy Color": [
+                                            0.0,
+                                            2.549999952316284,
+                                            2.549999952316284
+                                        ],
+                                        "Iris Inner Color": [
+                                            255.0,
+                                            223.0,
+                                            125.0
+                                        ],
+                                        "Iris Inner Scale": 0.0,
+                                        "Iris UV Radius": 0.1599999964237213,
+                                        "Iris Color": [
+                                            255.0,
+                                            255.0,
+                                            255.0
+                                        ],
+                                        "Limbus UV Width Color": 0.04500000178813934,
+                                        "Limbus Dark Scale": 6.5,
+                                        "ScleraBrightness": 0.6499999761581421,
+                                        "Sclera Roughness": 0.20000000298023225,
+                                        "Sclera Flatten Normal": 0.8999999761581421,
+                                        "Sclera Normal UV Scale": 0.5,
+                                        "Sclera UV Radius": 0.9300000071525574
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        255.0,
+                                        255.0,
+                                        255.0
+                                    ],
+                                    "Radius": 5.0,
+                                    "Distribution": 0.9300000071525574,
+                                    "IOR": 1.5499999523162842,
+                                    "DecayScale": 1.0,
+                                    "Lerp": 0.8500000238418579
+                                }
+                            },
+                            "Std_Eye_L": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    229.00001525878907,
+                                    229.00001525878907,
+                                    229.00001525878907
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Eye_L/Std_Eye_L_metallic.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Std_Eye_L_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Eye_L/Std_Eye_L_roughness.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Std_Eye_L_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            },
+                            "Std_Cornea_L": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Opacity": 0.800000011920929,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_metallic.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Std_Cornea_L_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_roughness.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_ao.jpg",
+                                        "Strength": 50.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLEye",
+                                    "Image": {
+                                        "Iris Normal": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_IrisN.png"
+                                        },
+                                        "Sclera Normal": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_ScleraN.png"
+                                        },
+                                        "EyeBlendMap2": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_BCBMap.jpg"
+                                        },
+                                        "Inner Iris Mask": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_IrisMask.png"
+                                        },
+                                        "Sclera": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Eye/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_Sclera.jpg"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "BlendMap2 Strength": 0.0,
+                                        "Shadow Radius": 0.4000000059604645,
+                                        "Shadow Hardness": 0.5,
+                                        "Specular Scale": 0.800000011920929,
+                                        "Is Left Eye": 1.0,
+                                        "Eye Corner Darkness Color": [
+                                            255.0,
+                                            187.9860076904297,
+                                            178.9998016357422
+                                        ],
+                                        "Iris Depth Scale": 0.8999999761581421,
+                                        "_Iris Roughness": 0.0,
+                                        "Iris Color Brightness": 1.0,
+                                        "Pupil Scale": 0.9549999833106995,
+                                        "_IoR": 1.399999976158142,
+                                        "Iris Cloudy Color": [
+                                            0.0,
+                                            2.549999952316284,
+                                            2.549999952316284
+                                        ],
+                                        "Iris Inner Color": [
+                                            255.0,
+                                            223.0,
+                                            125.0
+                                        ],
+                                        "Iris Inner Scale": 0.0,
+                                        "Iris UV Radius": 0.1599999964237213,
+                                        "Iris Color": [
+                                            255.0,
+                                            255.0,
+                                            255.0
+                                        ],
+                                        "Limbus UV Width Color": 0.04500000178813934,
+                                        "Limbus Dark Scale": 6.5,
+                                        "ScleraBrightness": 0.6499999761581421,
+                                        "Sclera Roughness": 0.20000000298023225,
+                                        "Sclera Flatten Normal": 0.8999999761581421,
+                                        "Sclera Normal UV Scale": 0.5,
+                                        "Sclera UV Radius": 0.9300000071525574
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        255.0,
+                                        255.0,
+                                        255.0
+                                    ],
+                                    "Radius": 5.0,
+                                    "Distribution": 0.9300000071525574,
+                                    "IOR": 1.5499999523162842,
+                                    "DecayScale": 1.0,
+                                    "Lerp": 0.8500000238418579
+                                }
+                            }
+                        }
+                    },
+                    "CC_Base_Teeth": {
+                        "Materials": {
+                            "Std_Upper_Teeth": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Upper_Teeth/Std_Upper_Teeth_metallic.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Std_Upper_Teeth_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Upper_Teeth/Std_Upper_Teeth_roughness.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Std_Upper_Teeth_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Upper_Teeth/Std_Upper_Teeth_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLTeethGum",
+                                    "Image": {
+                                        "MicroNormal": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Lower_Teeth/Std_Lower_Teeth_MicroN.png"
+                                        },
+                                        "Gradient AO": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Lower_Teeth/Std_Lower_Teeth_GradAO.jpg"
+                                        },
+                                        "Gums Mask": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Lower_Teeth/Std_Lower_Teeth_GumsMask.jpg"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "Flip MicroNormal Y": 1.0,
+                                        "Teeth MicroNormal Tiling": 10.0,
+                                        "Teeth MicroNormal Strength": 0.30000001192092898,
+                                        "Gums MicroNormal Tiling": 10.0,
+                                        "Gums MicroNormal Strength": 0.30000001192092898,
+                                        "Teeth Edge Color": [
+                                            79.99349975585938,
+                                            29.988000869750978,
+                                            19.992000579833986
+                                        ],
+                                        "Is Upper Teeth": 1.0,
+                                        "Teeth Brightness": 0.800000011920929,
+                                        "Teeth Desaturation": 0.10000000149011612,
+                                        "Gums Brightness": 0.6150000095367432,
+                                        "Gums Desaturation": 0.1420000046491623,
+                                        "Front Roughness": 0.4000000059604645,
+                                        "Front Specular": 0.10000000149011612,
+                                        "Front AO": 1.0,
+                                        "Back AO": 0.0,
+                                        "Back Roughness": 0.0,
+                                        "Back Specular": 0.0,
+                                        "Gums Scatter": 1.0,
+                                        "Teeth Scatter": 0.699999988079071
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        166.0,
+                                        123.0,
+                                        101.0
+                                    ],
+                                    "Radius": 1.5,
+                                    "Distribution": 0.9300000071525574,
+                                    "IOR": 1.5499999523162842,
+                                    "DecayScale": 0.15000000596046449,
+                                    "Lerp": 0.8999999761581421
+                                }
+                            },
+                            "Std_Lower_Teeth": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Lower_Teeth/Std_Lower_Teeth_metallic.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Std_Lower_Teeth_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Lower_Teeth/Std_Lower_Teeth_roughness.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "Std_Lower_Teeth_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Lower_Teeth/Std_Lower_Teeth_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLTeethGum",
+                                    "Image": {
+                                        "MicroNormal": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Lower_Teeth/Std_Lower_Teeth_MicroN.png"
+                                        },
+                                        "Gradient AO": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Lower_Teeth/Std_Lower_Teeth_GradAO.jpg"
+                                        },
+                                        "Gums Mask": {
+                                            "Texture Path": "./textures/Dikla/CC_Base_Teeth/CC_Base_Teeth/Std_Lower_Teeth/Std_Lower_Teeth_GumsMask.jpg"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "Flip MicroNormal Y": 1.0,
+                                        "Teeth MicroNormal Tiling": 10.0,
+                                        "Teeth MicroNormal Strength": 0.30000001192092898,
+                                        "Gums MicroNormal Tiling": 10.0,
+                                        "Gums MicroNormal Strength": 0.30000001192092898,
+                                        "Teeth Edge Color": [
+                                            79.99349975585938,
+                                            29.988000869750978,
+                                            19.992000579833986
+                                        ],
+                                        "Is Upper Teeth": 0.0,
+                                        "Teeth Brightness": 0.800000011920929,
+                                        "Teeth Desaturation": 0.10000000149011612,
+                                        "Gums Brightness": 0.6150000095367432,
+                                        "Gums Desaturation": 0.1420000046491623,
+                                        "Front Roughness": 0.4000000059604645,
+                                        "Front Specular": 0.10000000149011612,
+                                        "Front AO": 1.0,
+                                        "Back AO": 0.0,
+                                        "Back Roughness": 0.0,
+                                        "Back Specular": 0.0,
+                                        "Gums Scatter": 1.0,
+                                        "Teeth Scatter": 0.699999988079071
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        165.0,
+                                        121.0,
+                                        101.0
+                                    ],
+                                    "Radius": 1.5,
+                                    "Distribution": 0.9900000095367432,
+                                    "IOR": 1.0,
+                                    "DecayScale": 0.9300000071525574,
+                                    "Lerp": 0.8999999761581421
+                                }
+                            }
+                        }
+                    },
+                    "Side_part_mid": {
+                        "Materials": {
+                            "Hair_Transparency": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Node Type": "Hair",
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "./textures/Dikla/Side_part_mid/Side_part_mid/Hair_Transparency/Hair_Transparency_metallic.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "Hair_Transparency_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "Hair_Transparency_Specular.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "./textures/Dikla/Side_part_mid/Side_part_mid/Hair_Transparency/Hair_Transparency_roughness.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "Hair_Transparency_Opacity.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Dikla/Side_part_mid/Side_part_mid/Hair_Transparency/Hair_Transparency_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/Dikla/Side_part_mid/Side_part_mid/Hair_Transparency/Hair_Transparency_Hair Root Map.jpg"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/Dikla/Side_part_mid/Side_part_mid/Hair_Transparency/Hair_Transparency_Hair ID Map.jpg"
+                                        },
+                                        "Hair Flow Map": {
+                                            "Texture Path": "./textures/Dikla/Side_part_mid/Side_part_mid/Hair_Transparency/Hair_Transparency_Hair Flow Map.jpg"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            255.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 1.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 0.5239999890327454,
+                                        "Hair Specular Map Strength": 0.30000001192092898,
+                                        "Specular Strength": 0.800000011920929,
+                                        "Secondary Specular Strength": 1.0,
+                                        "Transmission Strength": 0.15000000596046449,
+                                        "No Back Face Triangles": 1.0,
+                                        "VertexGrayToColor": [
+                                            11.0,
+                                            4.0,
+                                            1.0
+                                        ],
+                                        "VertexColorStrength": 0.8460000157356262,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            28.0,
+                                            9.0,
+                                            6.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            46.0,
+                                            24.0,
+                                            15.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            182.0,
+                                            125.0,
+                                            79.0
+                                        ],
+                                        "_1st Dye Strength": 1.0,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            27.769500732421876,
+                                            64.03050231933594,
+                                            105.11100006103516
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 1.0,
+                                        "Invert 1st Dye RootMap Mask": 1.0,
+                                        "_1st Dye add Specular": 0.07500000298023224,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            161.0,
+                                            89.0,
+                                            58.0
+                                        ],
+                                        "_2nd Dye Strength": 0.20399999618530274,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            162.9705047607422,
+                                            205.52999877929688,
+                                            242.1479949951172
+                                        ],
+                                        "_2nd BlendMode": 0.0,
+                                        "Mask 2nd Dye by RootMap": 0.0,
+                                        "Invert 2nd Dye RootMap Mask": 0.0,
+                                        "_2nd Dye add Specular": 0.12600000202655793,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": -0.23000000417232514,
+                                        "BlackColor Reflection Offset Y": 0.006000000052154064,
+                                        "BlackColor Reflection Offset Z": -0.06300000101327896,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": -0.367000013589859,
+                                        "WhiteColor Reflection Offset Y": 0.3100000023841858,
+                                        "WhiteColor Reflection Offset Z": 0.07999999821186066,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            },
+                            "Scalp_Transparency": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Node Type": "Hair",
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Specular Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "Scalp_Transparency_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "Scalp_Transparency_Opacity.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
