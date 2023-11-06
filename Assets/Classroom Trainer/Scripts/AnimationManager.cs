@@ -20,7 +20,7 @@ public class AnimationManager : MonoBehaviour
     private enum State { Idle, LookAtTeacher, LookAtFriend, Writing }
     private State currentState;
     private AudioSource WritingSound;
-    
+    public bool StopIntro = false;
 
     void Start()
     {
@@ -46,7 +46,17 @@ public class AnimationManager : MonoBehaviour
 
     void Update()
     {
-        if (bipedIK.solvers.lookAt != null)
+
+        if (!StopIntro)
+        {
+            if (MicVolumeMover.Instance.IsTalking)              
+            {
+                StartCoroutine(LerpTalkingAnim(0f));
+                StopIntro = true;
+            }
+            
+        }
+            if (bipedIK.solvers.lookAt != null)
         {
             bipedIK.solvers.lookAt.IKPositionWeight = LookAtTarget;
         }
@@ -56,47 +66,55 @@ public class AnimationManager : MonoBehaviour
     {
         while (true)
         {
-            // Increase the probability of staying in the same state
-            float increaseProb = 0.2f;
-            float currentIdleProb = currentState == State.Idle ? IdleProb + increaseProb : IdleProb;
-            float currentLookAtTeacherProb = currentState == State.LookAtTeacher ? LookAtTeacherProb + increaseProb : LookAtTeacherProb;
-            float currentLookAtFriendProb = currentState == State.LookAtFriend ? LookAtFriendProb + increaseProb : LookAtFriendProb;
-            float currentWritingProb = currentState == State.Writing ? WritingProb + increaseProb : WritingProb;
-            if (TXRPlayer.Instance.FocusedObject != null)
-                {
-                Debug.Log(TXRPlayer.Instance.FocusedObject.name);
-                /*if (TXRPlayer.Instance.FocusedObject.name == gameObject.name)
-                    {
-                    currentLookAtTeacherProb += 5f;
-                    }*/
-                if (TXRPlayer.Instance.FocusedObject.transform == gameObject.transform)
-                    {
-                    currentLookAtTeacherProb += 5f;
-                    }
-            }
-            if (MicVolumeMover.Instance.IsTalking)
+            if (!StopIntro)
             {
-                currentLookAtTeacherProb += 10f;
-            }
-                // Normalize probabilities after modifying
-            float totalProb = currentIdleProb + currentLookAtTeacherProb + currentLookAtFriendProb + currentWritingProb;
-            currentIdleProb /= totalProb;
-            currentLookAtTeacherProb /= totalProb;
-            currentLookAtFriendProb /= totalProb;
-            currentWritingProb /= totalProb;
-
-            // Determine next state
-            float randomValue = Random.Range(0f, 1f);
-            if (randomValue < currentIdleProb)
-                currentState = State.Idle;
-            else if (randomValue < currentIdleProb + currentLookAtTeacherProb)
-                currentState = State.LookAtTeacher;
-            else if (randomValue < currentIdleProb + currentLookAtTeacherProb + currentLookAtFriendProb)
                 currentState = State.LookAtFriend;
+            }
             else
-                currentState = State.Writing;
+            {
+                float increaseProb = 0.2f;
+                float currentIdleProb = currentState == State.Idle ? IdleProb + increaseProb : IdleProb;
+                float currentLookAtTeacherProb = currentState == State.LookAtTeacher ? LookAtTeacherProb + increaseProb : LookAtTeacherProb;
+                float currentLookAtFriendProb = currentState == State.LookAtFriend ? LookAtFriendProb + increaseProb : LookAtFriendProb;
+                float currentWritingProb = currentState == State.Writing ? WritingProb + increaseProb : WritingProb;
+                if (TXRPlayer.Instance.FocusedObject != null)
+                {
+                    Debug.Log(TXRPlayer.Instance.FocusedObject.name);
+                    /*if (TXRPlayer.Instance.FocusedObject.name == gameObject.name)
+                        {
+                        currentLookAtTeacherProb += 5f;
+                        }*/
+                    if (TXRPlayer.Instance.FocusedObject.transform == gameObject.transform)
+                    {
+                        currentLookAtTeacherProb += 5f;
+                    }
+                }
+                if (MicVolumeMover.Instance.IsTalking)
+                {
+                    currentLookAtTeacherProb += 10f;
+                }
+                // Normalize probabilities after modifying
+                float totalProb = currentIdleProb + currentLookAtTeacherProb + currentLookAtFriendProb + currentWritingProb;
+                currentIdleProb /= totalProb;
+                currentLookAtTeacherProb /= totalProb;
+                currentLookAtFriendProb /= totalProb;
+                currentWritingProb /= totalProb;
 
-            Debug.Log((currentIdleProb, currentLookAtTeacherProb, currentLookAtFriendProb, currentWritingProb));
+                // Determine next state
+                float randomValue = Random.Range(0f, 1f);
+                if (randomValue < currentIdleProb)
+                    currentState = State.Idle;
+                else if (randomValue < currentIdleProb + currentLookAtTeacherProb)
+                    currentState = State.LookAtTeacher;
+                else if (randomValue < currentIdleProb + currentLookAtTeacherProb + currentLookAtFriendProb)
+                    currentState = State.LookAtFriend;
+                else
+                    currentState = State.Writing;
+
+                Debug.Log((currentIdleProb, currentLookAtTeacherProb, currentLookAtFriendProb, currentWritingProb));
+            }
+            // Increase the probability of staying in the same state
+            
             
             
            
@@ -191,6 +209,23 @@ public class AnimationManager : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             WritingSound.volume = Mathf.Lerp(startVolume, targetVolume, elapsedTime / duration);
+            yield return null;
+        }
+
+        // To ensure the target volume is precisely set at the end of the lerp.
+        WritingSound.volume = targetVolume;
+    }
+    IEnumerator LerpTalkingAnim(float targetVolume)
+    {
+        float startVolume = animator.GetFloat("Talking");
+        //float startVolume = WritingSound.volume;
+        float elapsedTime = 0f;
+        float duration = 0.5f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            animator.SetFloat("Talking", Mathf.Lerp(startVolume, targetVolume, elapsedTime / duration)) ;
             yield return null;
         }
 

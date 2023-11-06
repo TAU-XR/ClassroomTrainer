@@ -9,6 +9,7 @@ TagManager:
   - RoomLight
   - SamplesInfoPanel
   - PlayerHead
+  - Duplicated Characters
   layers:
   - Default
   - TransparentFX
