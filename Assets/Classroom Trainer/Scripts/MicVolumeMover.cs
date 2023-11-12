@@ -22,6 +22,8 @@ public class MicVolumeMover : TXRSingleton<MicVolumeMover>
 
     void Start()
     {
+        OVRManager.display.RecenterPose();
+
         // Check if we have at least one microphone
         if (Microphone.devices.Length > 0)
         {
